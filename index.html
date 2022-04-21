@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParcialPractica</title>
+   
+  </head>
+  <body>
+   
+    <form id="fire-form" method="post">
+        <label for="Nombre">Nombre</label>
+        <input type="text" placeholder="Inserte nombre " id="fire-nombre">
+        <label for="Nombre">Apellidos </label>
+        <input type="text" placeholder="Inserte Apellidos" id="fire-apellido">
+        <label for="Nombre">Edad</label>
+        <input type="number" placeholder="Inserte Edad" id="fire-edad">
+        <button type="submit" id="fire-btn" onclick="datos()">Guardar</button>
+    </form>
+
+    <div id="contenedor"></div>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
